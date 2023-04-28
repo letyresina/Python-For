@@ -6,11 +6,11 @@
 N = int(input("Informe um número inteiro qualquer: "))
 multiplo = 0
 
-for i in (2, N + 1):
+for i in range(2, N):
     if (N % i == 0):
         multiplo += 1
 
-if (multiplo == 0):
+if (multiplo == 0 and N != 1):
     print(f"O número {N} é primo")
 else:
     print(f"O número {N} não é primo")
